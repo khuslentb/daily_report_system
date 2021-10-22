@@ -77,7 +77,7 @@ public class EmployeeAction extends ActionBase {
      * @throws IOException
      */
     public void entryNew() throws ServletException, IOException {
-
+        System.out.println("entryNew");
         //管理者かどうかのチェック //追記
         if (checkAdmin()) { //追記
             putRequestScope(AttributeConst.TOKEN, getTokenId()); //CSRF対策用トークン
